@@ -52,43 +52,12 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   SiggyWork's custom styles
-   ========================================================================== */
-
 body {
   font: 16px Helvetica, Arial, sans-serif;
   background-color: #f3ebcc;
   color: #444;
   text-align: center;
   overflow: hidden;
-}
-
-body:hover:after {
-  content: "Hover to Slow Motion";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1vh;
-  color: #1c1c1c;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font: 700 9px/14px Tahoma, sans-serif;
-  animation-name: tip;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes tip {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  10%,
-  80% {
-    opacity: 1;
-  }
 }
 
 .figure {
