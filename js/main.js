@@ -1,7 +1,12 @@
+const onReverseComplete = () => {
+  tl.invalidate();
+};
+
 const tl = gsap
   .timeline({
     yoyo: true,
     paused: true,
+    onReverseComplete: onReverseComplete,
   })
   .to("svg *", {
     duration: 2,
@@ -12,5 +17,8 @@ const tl = gsap
   });
 
 const svg = document.querySelector("svg");
+
 svg.addEventListener("mouseenter", () => tl.play());
-svg.addEventListener("mouseleave", () => tl.reverse());
+svg.addEventListener("mouseleave", () => {
+  tl.reverse();
+});
